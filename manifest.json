@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Focus Extension",
+  "version": "1.0",
+  "description": "Убирает рекомендации и отвлекающие элементы с YouTube",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ]
+}
