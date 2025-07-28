@@ -1,4 +1,4 @@
-Hides homepage videos and recommendations to avoid distractions
+Hides homepage videos and recommendations to avoid distractions browser extension
 # How to install
 * Download the repository as an archive and unpack it
 * Go to browser extensions
